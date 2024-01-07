@@ -1,0 +1,58 @@
+zeusCompositionScriptLevel = 2;
+//-1 - Dont respawn on start. Don't run respawn script on start.
+// 0 - Dont respawn on start. Run respawn script on start.
+// 1 - Respawn on start. Run respawn script on start.
+respawnOnStart = -1; // Default: 0
+respawnTemplates[] = { "MenuPosition", "Tickets" };
+
+//Manual respawn button
+respawnButton = 1; // 0: disabled - 1: enabled. Default: 1
+
+//Disable AI for playable slots
+disabledAI = 1; // 0: disabled - 1: enabled. Default: 0
+
+disableChannels[] = { 0, 1, 2, 3, 4, 5 }; // simple channel ID list
+/*
+Channel list
+************
+Global:	0
+Side:	1
+Command	2
+Group	3
+Vehicle	4
+Direct	5
+*/
+
+
+//enableDebugConsole
+enableDebugConsole = 1; // dangerous in MP
+
+//Corpsemanager
+corpseManagerMode = 3; // Default: 0 for SP, 2 for MP
+corpseLimit = 5; // Default: 15
+corpseRemovalMinTime = 60; // seconds. Default: 10
+corpseRemovalMaxTime = 180; // seconds. Default: 3600
+wreckManagerMode = 1; // Default: 0 for SP, 2 for MP
+wreckLimit = 5; // seconds. Default: 15
+wreckRemovalMinTime = 60; // seconds. Default: 10
+wreckRemovalMaxTime = 300; // seconds. Default: 36000 (10 hours)
+minPlayerDistance = 20; // meters. Default: 0
+
+class CfgFunctions {
+	#include "scripts\functions.hpp"
+};
+
+// Free Fall Off The Ramp
+#include "scripts\ffr\menu.hpp"
+
+//description.ext
+class CfgSounds
+{
+ sounds[] = {};
+ class heartbeat
+ {
+  name = "heartbeat";
+  sound[] = {"\sounds\heartbeat.ogg", 300, 1};
+  titles[] = {0,""};
+ };
+};

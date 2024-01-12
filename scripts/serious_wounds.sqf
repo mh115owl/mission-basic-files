@@ -1,0 +1,8 @@
+[pat1, selectRandom[0,0.3,0.5,0.7,0.9], "leg_r", selectrandom ["backblast", "bite", "bullet", "explosive", "falling", "grenade", "punch", "ropeburn", "shell", "stab", "unknown", "vehiclecrash"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5,0.7,0.9], "leg_l", selectrandom ["backblast", "bite", "bullet", "explosive", "falling", "grenade", "punch", "ropeburn", "shell", "stab", "unknown", "vehiclecrash"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5,0.7,0.9], "body", selectrandom ["backblast", "bite", "bullet", "explosive", "falling", "grenade", "punch", "ropeburn", "shell", "stab", "unknown", "vehiclecrash"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5,0.7,0.9], "head", selectrandom ["backblast", "bite", "bullet", "explosive", "falling", "grenade", "punch", "ropeburn", "shell", "stab", "unknown", "vehiclecrash"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5,0.7,0.9], "hand_r", selectrandom ["backblast", "bite", "bullet", "explosive", "falling", "grenade", "punch", "ropeburn", "shell", "stab", "unknown", "vehiclecrash"]] call ace_medical_fnc_addDamageToUnit;
+[pat1, selectRandom[0,0.3,0.5,0.7,0.9], "hand_l", selectrandom ["backblast", "bite", "bullet", "explosive", "falling", "grenade", "punch", "ropeburn", "shell", "stab", "unknown", "vehiclecrash"]] call ace_medical_fnc_addDamageToUnit;
+sleep 1;
+systemchat "Kezdd meg a súlyos sérülések ellátását!";

@@ -1,4 +1,4 @@
-player createDiarySubject ["kat", "KAT"];
+player createDiarySubject ["kat", "KAT Medical"];
 player createDiaryRecord ["kat", ["KAT Help", 
 "
 <br />
